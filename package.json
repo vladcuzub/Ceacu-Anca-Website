@@ -1,16 +1,13 @@
 {
   "name": "anca-web-bootstrap",
   "version": "1.0.0",
-  "repository": {
-    
-  },
+  "repository": {},
   "description": "",
   "main": "index.js",
   "homepage": "https://github.com/vladcuzub/Ceacu-Anca-Website.git",
   "scripts": {
     "start": "webpack serve --mode development",
-    "deploy": "npm run build && NODE_ENV=production webpack --config webpack.config.js"
-    
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",

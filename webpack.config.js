@@ -41,15 +41,17 @@ module.exports = {
     ]
   }
 }
-const path = require('path');
-const ghPages = require('gh-pages');
+const productionConfig = merge([
+  {
+    output: {
 
-if (process.env.NODE_ENV === 'production') {
-  ghPages.publish(path.join(__dirname, 'dist'), (err) => {
-    if (err) {
-      console.error(err);
-    } else {
-      console.log('Deployed to GitHub Pages');
-    }
-  });
-}
+    
+
+
+      // Tweak this to match your GitHub project name
+      publicPath: "/webpack-demo/",
+
+    },
+  },
+  
+]);
