@@ -2,7 +2,7 @@
   "name": "anca-web-bootstrap",
   "version": "1.0.0",
   "repository": {
-    "homepage": "git+https://github.com/vladcuzub/Ceacu-Anca-Website.git"
+    "homepage": "https://github.com/vladcuzub/Ceacu-Anca-Website.git"
   },
   "description": "",
   "main": "index.js",
