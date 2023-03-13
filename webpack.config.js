@@ -41,3 +41,15 @@ module.exports = {
     ]
   }
 }
+const path = require('path');
+const ghPages = require('gh-pages');
+
+if (process.env.NODE_ENV === 'production') {
+  ghPages.publish(path.join(__dirname, 'dist'), (err) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log('Deployed to GitHub Pages');
+    }
+  });
+}
